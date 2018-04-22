@@ -1,0 +1,605 @@
+@charset "gb2312";
+/*reset.css*/
+body,h1,h2,h3,h4,blockquote,p,dl,dt,dd,ul,ol,li,th,td,form,fieldset,legend,button,input,textarea{margin:0;padding:0}
+body,button,input,select,textarea{font:12px/1.75 \5b8b\4f53,arial,sans-serif}
+button,input,select,textarea,h1,h2,h3,h4{font-size:100%}
+input, button, select, textarea {outline:none;}
+body{color:#333;}
+body, button, input, select, textarea,option{font-family: Microsoft Yahei, PingFangSC-Regular,  arial, sans-serif; }
+select,option{cursor:pointer;}
+em,i{font-style:normal}
+ol,ul{list-style:none;list-style-position:outside;}
+img,fieldset{border:0;vertical-align:middle}
+a{color:#333;text-decoration:none;outline:0}
+a:hover{color:#f70;text-decoration:none}
+.fl,.mark{float:left;display:inline;}.fr,.subMark,.mark-sub,.submark{float:right;display:inline}
+.spanclass{display:none}
+img{vertical-align:top}
+.clearfix{*zoom:1;}
+.clearfix:before,.clearfix:after{display:table;content:"";line-height:0;}
+.clearfix:after{clear:both;}
+.clear{font-size:0;line-height:0;height:0;overflow:hidden;clear:both;visibility:hidden}
+
+.hide{display:none;}
+.ohide{opacity: 0; z-index:0;}
+.vhide{visibility:hidden;}
+.mt35{margin-top:35px;}
+.mt20{margin-top:20px;}
+
+.doc{width:1120px;margin:0 auto;background:#fff;}
+
+/*头部广告*/
+.ivy_1120{width:1120px; margin:0 auto;}
+.ivy_1120 iframe, .ivy_1120 object, .ivy_1120 img {margin-top:10px;vertical-align: top;}
+
+/*看了又看*/
+.box_lk{width:270px;}
+.box_lk .tit{height:48px; line-height:48px; border-bottom:1px #e5e5e5 solid;}
+.box_lk .tit span{float:left; height:47px; line-height:47px; border-bottom:2px #0777dd solid; font-size:24px; color:#0777dd;}
+.box_lk .tit a{float:right; height:18px; line-height:18px; padding-left:19px; background:url(//www1.pcauto.com.cn/zt/gz20170412/price/sp_pic.png) no-repeat -287px 4px; color:#999; margin-top:18px; text-decoration:none;}
+.box_lk .tit a:hover{color:#f60; background-position:-287px -33px;}
+.box_lk ul{display:none; margin-top:20px;}
+.box_lk li{height:60px; margin-bottom:20px;}
+.box_lk li .pic{float:left; width:80px; height:60px; margin-right:15px;}
+.box_lk li p{height:20px; line-height:20px; padding-top:7px; font-size:14px;}
+.box_lk li span{display:block; font-size:12px; color:#ff3333; height:24px; line-height:24px;}
+/*看了又看*/
+
+/*分页色值0777dd*/
+.pagebox{height:40px; line-height:40px; text-align:center; margin-top:10px; font-size:14px;}
+.pagebox a{display:inline-block; *zoom:1; height:38px; width:38px; border:1px #ddd solid; margin:0 3px;}
+.pagebox .btns{width:72px;}
+.pagebox a:hover,.pagebox a.current{border:1px #0777dd solid; background:#0777dd; color:#fff; text-decoration:none;}
+
+/*给顶栏统一加上横线*/
+#header {border-bottom: 1px #ececec solid; }
+@charset "gb2312";
+/*btn.css*/
+.btn-change{background:url(//www1.pcauto.com.cn/zt/gz20170412/price/cxsy/icon.png) no-repeat;}
+.btn{display:inline-block; text-align:center; border:1px solid #ddd; *display:inline; *zoom:1;}
+.btn:hover{color:#fff; background-color:#f60; border-color:#f60;}
+.btn-xdj,.btn-xdj:visited,.btn-xdj:hover{color:#fff;}
+.btn-xdj{background-color:#f80; border-color:#f80;}
+.btn-tg{display:block; width:150px; height:30px; line-height:30px; background-color:#f80; color:#fff; text-align:center; cursor:pointer;}
+.btn-tg:hover{background-color:#ff6700;}
+.btn-tg .icon-tg{margin-right:5px; vertical-align:-3px; *vertical-align: 0;}
+.btn-change{display:inline-block; padding-left: 20px; text-align: center; background-position: -25px -623px; cursor:pointer;}
+.btn-change:hover{background-position: -26px -646px;}
+.btn-mini{color: #333; float: right; height: 23px; line-height: 23px; *line-height: 24px; padding: 0 5px; width: 44px; border:1px #ddd solid; text-align:center; font-size:12px; cursor:pointer;}
+.btn-mini .icon10{background:url(//www1.pcauto.com.cn/zt/gz20151014/duibi/images/conpare_sprite.png) repeat -72px 0; overflow: hidden; height: 10px; width: 10px; cursor: pointer; float: left; position: relative; top: 8px; z-index: 10;}
+.btn-mini:hover{color:#fff; border:1px #f60 solid; background:#f60;}
+.btn-mini:hover .icon10{background-position:-73px -32px;}
+.btn-disabled,.btn-disabled:hover{cursor:default; border:1px #ddd solid !important; color:#888 !important; background:#fff !important; text-decoration:none;}
+.btn-dp{width: 86px; height: 20px; display: inline-block; color: #fff; background-color: #0777dd; text-align: center; font-size: 12px;}
+.btn-dp:hover{background-color:#f60; color:#fff!important; }
+.btn-dp .icon-dp{margin-right:3px; vertical-align: -1px; background-position: 0 -508px; *vertical-align:5px;}
+
+.btn-moreA,.btn-moreB,.btn-moreC{cursor:pointer;}
+.btn-moreA{background-position:0 0; display:block; height: 40px; line-height:40px; text-align:center; background-color:#f5f5f5; cursor:pointer; font-size:14px; color:#999;}
+.btn-moreB{display:inline-block; color:#333;}
+.btn-moreB .icon-arrD{background-position: -22px -457px; margin-left:5px;}
+.change.btn-moreB .icon-arrD,.change .btn-moreB .icon-arrD{background-position: -22px -465px;}
+.btn-moreC{display:block; width:170px; margin:0 auto; height:35px; line-height:35px; background-color:#f5f5f5; text-align:center;}
+
+.pcbtn-cancel-txt{display:none;}
+.pcbtn-added:hover .pcbtn-cancel-txt{display:inline-block}
+.pcbtn-added:hover .pcbtn-success-txt{display:none;} 
+/*icons.css*/
+.icon,.icon-renz,.icon-renz1,.modNews li .cmt,.modNews li .vip{display:inline-block; background-image:url(//www1.pcauto.com.cn/zt/gz20170412/price/cxsy/icon.png); background-repeat:no-repeat; vertical-align:middle;}
+.icon-qj,.icon_detailed,.icon-video1,.icon-vs,.star,.per{background:url(//www1.pcauto.com.cn/zt/gz20170412/price/icon-big.png) no-repeat;}
+.wrap .icon,.icon-cb,.icon-cx,.icon-smileG,.box-arr,.box-arr1{display:inline-block; background-image:url(//www1.pcauto.com.cn/zt/gz20170412/price/cxing/icons.png); background-repeat:no-repeat; vertical-align:middle;}
+.tag-nosale .icon1,.tag-nosale .icon2{background-image:url(//www1.pcauto.com.cn/zt/gz20170412/price/index/icons_201707.png); background-repeat: no-repeat;}
+
+.icon-jh{padding: 0 3px 0 16px; background-position: -17px -507px; height:18px; line-height:18px; color:#fff; background-color:#fd4444; font-size:12px;vertical-align:middle; border-radius:2px;}
+.icon-arrD{width:8px; height:5px;margin-left:5px; background-position: -22px -475px;}
+.show .icon-arrD{background-position: -22px -481px;}
+.icon-arrD1{width:10px; height:5px; background-position: -19px -488px;}
+.icon-arrD2{width:7px; height:7px; background-position:-19px -498px;}
+.icon-arrR{width:5px; height:8px; background-position:-35px -474px;}
+.icon-arrR1{width:8px; height:18px; background-position: -34px -838px;}
+.icon-tg{width:13px; height:17px; background-position:0 -580px;}
+.icon-4s{width:32px; height:21px; background-position:0 -401px;}
+.icon-disabled{width:32px; height:21px; background-position:0 -851px;}
+.icon-zt{width: 40px; height: 21px; background-position: 0 -377px;}
+.icon-js{width:14px; height:15px; background-position:0 -544px; cursor:pointer;}
+a:hover .icon-js, .show .icon-js,.icon-js:hover{background-position:-16px -544px;}
+.icon-ivy{width:20px; height:12px; background-position:-20px -674px;}
+.icon-eye{width:16px; height:12px; background-position:0 -457px;}
+.icon-vs{width: 74px; height: 32px; background-position: -44px -47px;}
+.icon-jxs,.icon-24h,.icon-mianshui,.icon-save,.icon-newcar, .icon-onsale{display:inline-block; margin-left:5px; height:15px; line-height:15px; padding:0 3px; font-size:12px; color:#fff; border-radius:2px;}
+.icon-jxs{background-color:#ccc; }
+.icon-24h{background-color:#9cc3e7;}
+.icon-renz{width: 16px; height: 16px; background-position: -19px -524px;}
+.icon-renz1{width: 40px; height: 16px; line-height: 16px; color: #fff; background-position: 0px -699px; font-size: 12px; padding-left: 5px; vertical-align:1px;}
+.icon-video1{display:block; width:46px; height:46px; background-position:0 -43px;}
+.icon-video2{width:17px; height:17px; background-position:-17px -580px;}
+.icon-clear{width:10px; height:12px; background-position:0px -768px;}
+.icon-dp{width:12px; height:12px; background-position: -28px -784px;}
+.icon-live{width:11px; height:14px; background-position: -19px -562px;}
+.icon-qj{width: 96px; height: 36px; line-height: 36px; padding-left: 13px; background-position: 0 -484px; text-align: center; color: #fff;position: absolute; top:12px; left:12px;font-size: 16px;}
+.icon-error{width: 14px; height: 14px; background-position: -70px -346px;}
+.icon-name {width: 16px; height: 16px; background-position: -111px -406px; }
+.icon-tel {width: 16px; height: 19px; background-position: -111px -430px; }
+.icon-cx{width:32px; height:16px;  padding-left:3px; background-position:0 -364px; color:#fff; font-size:12px; line-height:16px; font-weight:normal; text-align:left;}
+.icon-smileG{width:14px; height:14px; background-position:-51px -259px; top:3px; *top:0; margin-right:5px;}
+.icon_detailed{width: 114px; height: 48px; background-position: 0 -528px;position: absolute; top:12px; left:12px;}
+
+/*经销商icon*/
+.icon-jxs-green,.icon-jxs-gray{ display: inline-block; width: 28px; padding: 0 7px 0 3px; margin-right: 5px; text-align: center; height: 21px; line-height: 19px; font-size:12px; color: #fff;  *display: inline; *zoom:1; vertical-align: 1px; *vertical-align: 0}
+.icon-jxs-green{background-position: 0 -973px;}
+.icon-jxs-gray{background-position: 0 -999px;}
+
+/*停售icon*/
+.icon-nosale{display: inline-block; height: 21px; line-height: 21px; color: #fff; background-color: #ccc; padding: 0 7px; border-radius: 2px; *display: inline; *zoom:1;}
+.tag-nosale{position: absolute; left:-4px; height: 21px; line-height: 21px; padding:0 10px; color:#fff; background-color:#ccc; text-align:center; z-index: 10;}
+.tag-nosale .icon1{position: absolute; bottom: -4px; left: 1px; width: 4px; height: 4px;  background-position: -18px -259px; font-size: 0; overflow:hidden;}
+.tag-nosale .icon2{ position: absolute; right: -10px; top:0; width: 10px; height: 21px; background-position: -44px -129px;}
+
+
+/*星星*/
+.star{position: relative; margin-right:46px; top:-3px;}
+.star,.per{display:inline-block; width:92px; height:16px; *display:inline; *zoom:1;}
+.star{background-position:0 0; vertical-align:middle;}
+.per{background-position:0 -20px; vertical-align:top;}
+.star .starmk{font-weight:bold; font-size:18px; position: absolute; right: -40px; top: -5px;}
+
+/*电动车icon*/
+.icon-mianshui{background: #96cf95;}
+.icon-save{background: #9bc3e8;}
+.icon-newcar{background: #ecb0c8;}
+.icon-onsale{background: #ecc896;}
+@charset "gb2312";
+/*skin.css*/
+.gray{color:#999;}
+.red{color:#ff4444;}
+.green{color:#092;}
+.blue{color:#0777dd;}
+.yellow{color:#ff8800;}
+.rgba{height: 48px; line-height: 60px; background: url(//www1.pcauto.com.cn/2016/1221/price/img/bg.png) repeat-x;}
+@charset "gb2312";
+
+
+#header .head_city{z-index: 2}
+#header .head_city_arrow{transition:.25s;}
+#header .active .head_city_arrow{transform: rotate(180deg);}
+#header .active{z-index:1001;}
+
+.layCityBox .b-letArea input,.layCityBox .b-zdicon,.layCityBox .b-ntextdicon,.layCityBox .b-sClose{background:url(//www1.pcauto.com.cn/zt/gz20170412/price/layIcon.png) no-repeat}.layCityBox{border:1px solid #e9e9e9;width:560px;background:#fff;position:absolute;top:25px;left:0;box-shadow:0 0 5px #d3d3d3;font-weight:normal;color:#333;z-index:999;font:14px/1.75 'Microsoft Yahei', arial, sans-serif;cursor:default;display:none}.layCityBox .b-arrow{position:absolute;width:11px;height:6px;top:-6px;left:40px;overflow:hidden;display:none;}.layCityBox .b-sArea{/*height:65px;*/border-bottom:1px solid #ddd;position:relative;z-index:1;padding-top:5px;padding-bottom:8px;zoom:1;overflow:hidden;}
+
+.layCityBox .b-sArea{}
+
+
+.layCityBox .b-letArea{height:45px;border-bottom:1px dotted #bbb;background:#f9f9f9;position: relative;z-index:1;}.layCityBox .b-cityArea{height:218px;overflow:auto;position:relative;z-index:0}.layCityBox .b-pCity{float:left;display:inline;width:76px;padding-left:15px;text-align:right}.layCityBox .b-citys a{display:inline;padding:0 4px;margin:7px 5px 0 0;float:left;height:20px;line-height:20px;white-space:nowrap;}.layCityBox .b-citys i{display:inline;padding:0 4px;margin:7px 5px 0 0;float:left;height:20px;line-height:20px;color:#777;white-space:nowrap}.layCityBox .b-citys a:hover{color:#f70;text-decoration:underline}.layCityBox .b-letArea .b-input{float:left;width:132px;display:inline;padding:9px 0 0 10px;position:relative}.layCityBox .b-letArea input{width:94px;padding:0 5px 0 30px;height:24px;line-height:24px;border:1px solid #e9e9e9;background-position:8px -43px;color:#aaa;float:left;display:inline;background-color:#fff;font-size:12px;}.layCityBox .b-letArea input.on{width:119px;padding:0 5px;color:#333;background:#fff;}.layCityBox .b-sArea span{float:left;margin:5px 0 0 15px;}.layCityBox .b-sArea .b-citys{height:28px;overflow:hidden;}.layCityBox .b-sArea a{color:#0777dd;}.layCityBox .b-sArea a:hover{color:#f60;}.layCityBox .b-sArealetter{float:left;font:normal 16px/22px Arial;width:22px;height:22px;text-align:center;background:#fff;border:1px solid #ddd;margin:10px 0 0 10px;border-radius:2px;color:#888}.layCityBox .b-sArealetter:hover{border-color:#0777dd;background:#0777dd;color:#fff;text-decoration:none}.layCityBox .b-cityLet{zoom:1;border-bottom:1px dotted #bbb}.layCityBox .b-cityLet:after{content:"\20";display:block;clear:both;height:0;overflow:hidden}.layCityBox .b-letter{float:left;display:inline;font:normal 16px/42px Arial;color:#888}.layCityBox .b-province{float:right;display:inline;font:bold 14px/42px "Microsoft Yahei";width:60px;text-align:right}.layCityBox .b-cityArea .b-citys{float:left;display:inline;width:440px}.layCityBox .b-cityLet .b-citys{padding:5px 0 10px}.layCityBox .b-sClose{position:absolute;top:-1px;right:0;width:18px;height:18px;background-position:0 0;cursor:pointer}.layCityBox .b-zdicon{background-position:8px -69px;}.layCityBox .b-ntextdicon{background-position:5px -85px;}.layCityBox .b-slist{display:none;float:left;zoom:1}.layCityBox .b-ntextdicon{position:absolute;width:195px;border:1px solid #e9e9e9;top:32px;left:10px;background-color:#fff;padding-left:20px;box-shadow:2px 2px 2px #d3d3d3;display:none}.layCityBox .b-zdicon{padding-left:20px;height:18px;line-height:18px;color:#888}.layCityBox .b-slist{position:absolute;width:195px;border:1px solid #e9e9e9;top:32px;left:10px;background:#fff;box-shadow:2px 2px 2px #d3d3d3;display:none;zoom:1;float:left}.layCityBox .b-slist a{display:block;height:26px;line-height:26px;text-align:right;color:#777;border-top:1px dotted #ccc;padding:0 20px}.layCityBox .b-slist a:hover{background:#f8f8f8;text-decoration:none}.layCityBox .b-slist span{float:left;color:#333}.layCityBox .b-slist a:hover span{color:#f70}.layCityBox .dd{height:0;overflow:hidden;display:none;border:0}.layCityBox .b-zCity{border-bottom:1px dotted #bbb;overflow:hidden;*zoom:1}.layCityBox .b-zCity:after{content:"\20";display:block;clear:both;height:0;overflow:hidden}.layCityBox .b-zCity .b-province{float:left;width:70px;text-align:right}.layCityBox .b-zCity .b-citys{width:390px;padding:5px 0 10px}
+
+ 
+@charset "gb2312";
+.search{float:right;display:inline;line-height:30px;position:relative;z-index:200;}
+.search input{vertical-align:top;float:left;}
+.search .inpTxt{width:260px;color:#aaa;line-height:16px;height:16px;border:1px solid #0777dd;padding:10px;border-right:0;background-color:#fff;}
+.search .inpBtn{width:78px;height:38px;border:0;cursor:pointer;color:#fff;font-size:14px;background:#0777dd;font-family:"SimSum";font-weight:700;}
+.search .inpBtn:hover{background:#f70;color:#fff;}
+.search .inpFoc{background:#fff;text-indent:0;}
+.ksDetailList {border:1px solid #dedede;position:absolute;top:38px;z-index:99999;overflow:hidden;left:0;background:#fff;box-shadow:0 0 5px #d3d3d3;font-size:14px;}
+.ksDetailList-detail,.ksDetailList-sort {height:440px;text-align:left;background:#fff;border:1px solid #dedede;line-height:24px;position:relative;overflow:hidden;overflow-y:auto;float:left;width:154px;}
+.ksDetailList-index {float:left;border:1px solid #dedede;margin-right:-1px;background:#fff;_margin-right:-4px;}
+.ksDetailList-wrap {float:left;background:#f5f5f5;padding:5px;*zoom:1;}
+.ksDetailList-detail dt,.ksDetailList-sort dt {background:#fafafa;font-weight:bold;color:#0777dd;height:28px;line-height:28px;}
+.ksDetailList-wrap dt,.ksDetailList-wrap a {white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.ksDetailList-wrap dt {padding:0 10px;}
+.ksDetailList-wrap a {padding:0 10px;_position:relative;height:24px;display:block;}
+.ksDetailList-wrap a:hover {text-decoration:none;background:#0777dd;color:#fff;}
+.ksDetailList-index a {width:24px;height:20px;line-height:20px;text-align:center;color:#0777dd;padding:0;font-size:14px;}
+.ksDetailList-index a:hover {background:#0777dd;color:#fff;text-decoration:none;}
+.ksDetailList-wrap strong {display:block;font-weight:normal;}
+.ajaxsearch{z-index:99999;border-bottom:1px solid #ccc;}.ajaxsearch ul{border:1px solid #ccc;border-top:none;border-bottom:none;zoom:1;background:#fff}.ajaxsearch li{padding:0 10px;line-height:30px;color:#333;text-align:right;font-size:12px;zoom:1;height:30px}.ajaxsearch .hover{background:#f4f4f4}.ajaxsearch .resulttitle{float:left;display:inline;font-size:14px;cursor:pointer;}.ajaxsearch .resultPri{color:#c00}.ajaxsearch div.close{width:312px;border:1px solid #ccc;border-top:none;text-align:right;padding:0 5px;zoom:1;background:#f6f6f6;line-height:25px;cursor:pointer;display:none;}.ajaxsearch a .resulttitle {color:#0777dd;}.ajaxsearch-item_price {border-top:1px dotted #bbb;}.ajaxsearch-ico {float:left;width:15px;height:15px;background:red;margin-top:7px;background:url(//www1.pcauto.com.cn/zt/gz20170412/price/layIcon.png) -4px -19px;;margin-right:5px;}
+.ksDetailList-closeBtn {position:absolute;top:5px;right:5px;background:url(//www1.pcauto.com.cn/zt/gz20170412/price/layIcon.png) 0 0;width:19px;height:18px;line-height:50px;overflow:hidden;}
+.searchWrap{float: right;}
+.searchWrap .hot,.searchWrap .search{float: left;}
+.searchWrap .hot{margin-right:8px; line-height: 38px;height:38px;width:400px;overflow:hidden;}
+.searchWrap .hot a{ margin-right: 6px; font-size: 14px; color:#999;}
+.searchWrap .hot a:hover{color:#f60;}
+.search label .icon-arr{position: absolute; top:15px; right:88px; width: 10px; height: 6px; background:url(//www1.pcauto.com.cn/zt/gz20170412/price/index/icons_201707.png) no-repeat 0 -15px; font-size: 0; overflow:hidden;}
+#ksWord::-ms-clear{display:none!important;} /* 去掉ie下input 输入时显示的 X */   
+
+/*modA.css*/
+.thA{border-bottom:1px solid #e5e5e5;height:52px;}
+.thA .mark{color:#0777dd;font-size:24px;border-bottom:2px solid #0777dd;height:51px;line-height:51px;}
+.thA .mark a{color:#0777dd;}
+.thA .subMark a{margin:22px 0 0 11px;display:inline-block;color:#999; font-size:14px;}
+.thA .subMark a.yh{color:#ff4444;}
+.thA a:hover,.thA .subMark a.yh:hover{color:#f60;}
+.thA .subMark .line{border-right: 1px solid #e5e5e5; margin-left: 10px;}
+.thA .sub{margin: 22px 0 0 11px; font-size:14px; color:#999; *display:inline; *zoom:1; float:left;}
+.thA .subTab{float:right; *display:inline; margin-top:18px; border-top:1px solid #e5e5e5; border-right:1px solid #e5e5e5; font-size:14px;}
+.thA .subTab .tab{width:100px; height:34px; line-height:34px;  float:left; color:#999;border-left:1px solid #e5e5e5; text-align:center;}
+.thA .subTab .tab:hover{color:#f60;}
+.thA .subTab .tab.current{height:32px; border-bottom:1px solid #fff;  border-top:1px solid #007adf; color:#007adf;}
+.tbA{padding-top:20px;}
+.tbB{border-bottom:1px solid #e5e5e5; border-left:1px solid #e5e5e5; border-right:1px solid #e5e5e5;}
+.tbB li{border-bottom:1px solid #e5e5e5;}
+
+/*隐藏的交互*/
+.thA .subTab{position:relative; z-index:4;}
+.thA .subTab .lst{display:none; position:absolute; z-index:10; width:112px; background:#fff; border:1px #ddd solid; box-shadow:0px 0px 3px #ccc; right:-1px; top:40px; z-index:-1;}
+.thA .change .lst{display:block;}
+.thA .subTab .lst .tab{position:absolute; border-left:0 none; left:0; top:-10px; width:100%; height:12px;}
+.thA .subTab .lst a{display:block; width:112px; height:35px; line-height:35px; text-align:center;}
+.thA .subTab .lst a:hover{color:#f56262; background:#f5f5f5;}
+.thA .subTab .lst .tab:hover{background:#fff; opacity:0.01; filter:alpha(opacity=0.01);} 
+@charset "gb2312";
+
+/*modTab.css*/
+.tab{cursor:pointer;}
+.tab{position: relative;}
+.tab-tip{position:absolute; top:-30px; *top:-32px; left:-21px; width:152px; height:20px; text-align:center;}
+.tab-tip a,.tab-tip a:hover{color:#fff;}
+.tab-tip span{display:inline-block; height:20px; line-height:20px; padding:0 5px;font-size:12px; color:#fff; border-radius:1px; background-color:#f44; text-align:center; overflow:hidden; cursor:default;}
+.tab-tip .icon-arrD2{position:absolute; bottom:-9px; left:50%; margin-left:-1px;}
+
+.modTabA .tab{float:left; margin-right:20px; height:51px; line-height:51px; color:#999; font-size:22px; cursor:pointer;}
+.modTabA .tab a{color:#999;}
+.modTabA .tab a:hover{color:#f60;}
+.modTabA .tab.current a{color:#0777dd;}
+.modTabA .tab.current{ color: #0777dd; border-bottom: 2px solid #0777dd; font-size: 24px;}
+.modTabA .tlstA a{float:left;}
+.modTabB{height:88px; margin:25px 0  35px;border:1px solid #e5e5e5;overflow:hidden;}
+.modTabB .tab-ctrl,.modTabB .con-wrap{float:left;}
+.modTabB .tab-ctrl{width:133px;}
+.modTabB .tab-ctrl .tab{display:block; height:44px; line-height:44px; text-align:center; border-bottom:1px solid #e5e5e5; border-right:1px solid #e5e5e5; font-size:16px; cursor:pointer; color:#999;}
+.modTabB .tab-ctrl .tab.current{color:#0777dd; border-left:2px solid #0777dd; border-right:none;}
+.modTabB .tab.current a{color:#0777dd;}
+.modTabB .con-wrap{width: 984px;}
+.modTabB .con{overflow:hidden;}
+.modTabB ul{padding:12px 0; overflow:hidden;}
+.modTabB li {width: 268px; float: left; padding: 0 30px; margin-bottom:5px;}
+.modTabB .con-hq li a{display: block; line-height:32px;}
+.modTabB .con-gz li a{display: block; height:30px; line-height:30px; overflow:hidden;padding-left:10px; background:url(//www1.pcauto.com.cn/zt/gz20170412/price/icon.png) no-repeat; background-position:-36px 13px;}
+.modTabB .con-gz li a em{font-weight:bold;}
+.modTabB .tit{font-size:16px ; font-weight:bold;} 
+.modTabB .tit .icon-4s{margin-right:5px;}
+.modTabB .sub{font-size:14px;}
+
+.modTabC .tab-ctrl{margin:0 0 20px;}
+.modTabC .tab{float:left;  width:78px; line-height:33px; margin-right:10px; border:1px solid #ddd; text-align:center; position: relative; font-size:14px;}
+.modTabC .tab .arr-d{display:none; position: absolute;}
+.modTabC .tab.current{color:#fff; background-color:#0777dd; position: relative;}
+.modTabC .tab.current .arr-d{display:block;}
+.modTabC dt,.modTabC dd{padding:0 10px; font-size:14px;}
+.modTabC dt{ overflow:hidden;}
+.modTabC dt{height:40px; line-height:40px; background-color:#f5f5f5;}
+.modTabC dd{padding:15px 10px; border-bottom:1px solid #eee; position: relative;}
+.modTabC dd.selected{z-index:30;}
+.modTabC .col1,.modTabC .col2,.modTabC .col3,.modTabC .col4,.modTabC .col5{display:inline-block; vertical-align:middle; *display:inline; *zoom:1;}
+.modTabC .col1,.modTabC .col2,.modTabC .col3,.modTabC .col4{margin-right:14px;}
+.modTabC dt .col2,.modTabC dt .col3,.modTabC dt .col4{color:#999;}
+.modTabC .col2,.modTabC .col3,.modTabC .col4{text-align:center;}
+.modTabC .col1{width: 243px;}
+.modTabC .col2{width: 117px;}
+.modTabC .col3{width: 95px;}
+.modTabC .col4{width: 88px;}
+.modTabC .col4 .icon-js{margin-left:5px;}
+.modTabC dt .col1{font-weight:bold;}
+.modTabC .col1 .name{margin-bottom:5px;}
+.modTabC .col2 a{margin-right:5px;}
+.modTabC .des{font-size:12px;}
+.modTabC .des span,.modTabC .des em{padding-right:2px;}
+.modTabC .des .config{cursor: pointer;}
+.modTabC .icon-arrD1{display:none; position: absolute; bottom:-5px; left:50%; margin-left:-5px;}
+.modTabC .current .icon-arrD1{display:block;}
+.modTabC .btn-xdj,.modTabC .btn-compare{width:51px; font-size:12px;}
+.modTabC .btn-xdj,.modTabC .btn-fq{ margin-right:4px;}
+.modTabC .btn-fq{width:66px;  font-size:12px;}
+.modTabC .btn-mini{padding:0; height:21px; line-height:21px; float:none; display:inline-block; *display:inline; *zoom:1;}
+.modTabC .btn-mini .icon10{left:5px; top:6px;}
+.modTabC .btn-wrap .btn{height: 23px; line-height:23px;}
+
+.modTabD .tab-ctrl,.modTabD .tab-con{float:left;}
+.modTabD .tab-ctrl,.modTabD .tab-ctrl span{width:75px;}
+.modTabD .tab-ctrl span{display:block; height:49px; line-height:49px; margin-bottom:2px; background-color:#f5f5f5; text-align:center; font-size:12px; position: relative;}
+.modTabD .tab-ctrl .icon-arrR1{display:none; position: absolute;    right: -7px; top: 17px;}
+.modTabD .tab-ctrl span.current{background-color:#0777dd; color:#fff;}
+.modTabD .tab-ctrl span.current .icon-arrR1{display:block;}
+.modTabD .tab-ctrl{margin-right:15px;}
+.modTabD .tab-con{width:180px; font-size:14px;}
+.modTabD .tab-con ul{border-top:1px solid #eee;}
+.modTabD .tab-con li{padding:7px 0; border-bottom:1px solid #eee;}
+.modTabD .tab-con li{overflow:hidden; position: relative;}
+.modTabD .tab-con li .xdj{position: absolute;left: 112px; top: 30px; display:none; font-size:12px;}
+.modTabD .tab-con a{display:block; overflow:hidden; cursor:pointer;}
+
+.modTabD .tab-con .num,.modTabD .tab-con .txt{float:left;}
+.modTabD .tab-con .icon-arrR{float:right; margin-top:7px;}
+.modTabD .tab-con .num{margin-right:20px; width:12px;}
+.modTabD .tab-con .num1{color:#ff4444;}
+.modTabD .tab-con .txt span,.modTabD .tab-con .txt em{display:block;}
+.modTabD .tab-con .txt em{color:#999; font-size:12px; display:none;}
+.modTabD .current .txt em{display:block;}
+.modTabD .current .txt .xdj{color:#333;}
+.modTabD .current .txt .line{border-right: 1px solid #e5e5e5; height: 10px; font-size: 0; margin: 0 5px; display: inline-block; *display:inline; *zoom:1; overflow: hidden;}
+.modTabD .tab-con .current .xdj{display:block;}
+.modTabD .tab-con .current span{font-weight:bold; font-size:14px;}
+
+ 
+/*layout.css*/
+.sgHot a:hover img,.mainDiv a:hover img{opacity: 0.9; filter: alpha(opacity=90);}
+/*topbar*/
+body .navibar{position: relative;z-index: 601;}
+.topbar-wrapper {width: 1120px; margin:0 auto; padding-bottom: 20px; z-index: 500; background: white; }
+.topbar-wrapper .topBox,.topBox .logo,.topBox .head_city{float:left;}
+.topbar-wrapper .topbarAdd{ height:42px; line-height: 42px; padding: 14px 0; position: relative; z-index: 600;}
+.topBox .logo{ margin:6px 14px 0 0;}
+.topBox .icon-line{float: left; margin:8px 10px 0 0; width: 1px; height: 26px; background-color: #e5e5e5; font-size: 0; overflow: hidden;}
+.topBox .name{float: left;font-size: 26px; margin-right: 10px; font-weight: bold;}
+.topBox .head_city{float:left;cursor: pointer;display:inline;position:relative;} 
+.topBox .head_city_name{float:left;font-size:14px;font-weight: 600;} 
+.topBox .head_city_arrow{float:left;width:8px;height:5px;background:url(//www1.pcauto.com.cn/20141013/art/head_bg.png) no-repeat -119px -23px;margin:19px 0 0 5px;} 
+.topBox .layCityBox{left:-26px; top:34px;}
+.topBox .head_city{z-index: 2}
+.topBox .head_city_arrow{transition:.25s;}
+.topBox .active .head_city_arrow{transform: rotate(180deg);}
+.topBox .active{z-index:999;}
+
+/*导航浮动样式*/
+.nav-fixedA .navB-inner{position: fixed; top:0; left:0; z-index: 599;}
+.nav-fixedA .leftNav {position:fixed; top:55px; bottom:0;}
+.nav-fixedB .leftNav{position:fixed; top:0; bottom:0;}
+.nav-fixedA .mainDiv,.nav-fixedB .mainDiv{position: relative; left: 300px; float:none}
+
+/*navB*/
+.navB .pic .icon-arr,.navB .tool .icon-arr{background-image: url(//www1.pcauto.com.cn/zt/gz20170412/price/index/icons_201707.png); background-repeat: no-repeat;}
+.navB{position: relative; height: 55px; width: 100%; z-index: 500;}
+.navB-inner{height: 55px; width: 100%;}
+.navB .channel{ width: 1120px; margin:0 auto; background-color:#0777dd; color:#fff;}
+.navB li{position: relative; float: left; height:55px; line-height: 55px;font-size:18px;}
+.navB li.current .nav-link{background: #0A66BB; color: #fff;}
+.navB .nav-link{display:block; padding:0 24px; color:#fff; cursor: pointer;}
+.navB .nav-link:hover{text-decoration: none; background: #0A66BB; color: #fff;}
+.navB .pic .pic-sub,.navB .tool .tool-sub{display: none; position: absolute; margin-top: 5px; border: 1px solid #e5e5e5; box-shadow: 0px 0px 5px #ccc; background-color: #fff; top: 55px; }
+.navB .pic.show .pic-sub,.navB .tool.show .tool-sub{display: block;} 
+.navB .pic-sub{width: 108px;left: 0;}
+.navB .pic-sub a{display: block; width: 108px; height: 38px; line-height: 38px; padding:0; color:#333; text-align:center; font-size: 14px;}
+.navB .pic-sub a:hover{color:#f60; background-color: #f5f5f5;}
+.navB .pic .nav-link,.navB .tool .nav-link{padding-right: 34px;}
+.navB .pic .icon-arr,.navB .tool .icon-arr{position: absolute; top:25px; right: 14px; width: 10px; height: 6px; font-size: 0; overflow:hidden; background-position: 0 -32px;}
+.navB .pic.show .icon-arr,.navB .tool.show .icon-arr{background-position: -16px -24px;}
+.navB .tool{float: right;}
+.navB .tool .tool-sub{width: 270px; padding:20px 20px 15px; right:0;}
+.plstTool{width:300px; height:138px; overflow:hidden; font-size:12px;}
+.plstTool li{float:left; margin:0 25px 25px 0; width:50px; text-align:center; font-size: 12px;}
+.plstTool li .icon{margin:0 auto; display:block; background-image:url(//www1.pcauto.com.cn/zt/gz20170412/price/cxsy/icon.png); background-repeat:no-repeat; vertical-align:middle;}
+.plstTool li .icon{width:34px; height:34px;}
+.plstTool li em{display: block; height: 22px; line-height: 22px;}
+.icon-csdb{background-position: 0 -57px;}
+.icon-cxdb{background-position: 0 -98px;}
+.icon-tpdb{background-position: 0 -253px;}
+.icon-wzcx{background-position: 0 -135px;}
+.icon-gcjs{background-position: 0 -172px;}
+.icon-dkgc{background-position: 0 -253px;}
+.icon-zhgc{background-position: 0 -291px;}
+.icon-gjmc{background-position: 0 -333px;}
+
+/*leftNav*/
+.tree .emBox i,.tree .banTit .icon-line,.tree .product .icon-line{background-image: url(//www1.pcauto.com.cn/zt/gz20170412/price/index/icons_201707.png); background-repeat: no-repeat;}
+.leftNav{float: left; position:relative; width:270px; background: #fff;z-index: 100;}
+.wordBox{position: absolute; top:0; height:100%; background-color:#69baff; padding:5px 0;}
+.subWord{text-align: center;}
+.subWord a{display:block; width: 30px; height: 24px; line-height: 24px; font-size: 14px; font-family: arial;  font-weight: bold; color:#fff; cursor:pointer;}
+.subWord a:hover{background-color:#0777dd; color:#fff;}
+.leftTree{ position: relative; left:30px; width: 239px; overflow: auto; overflow-x: hidden; border:1px solid #e5e5e5; border-left:none;}
+.leftTree .sgHot{ height: 148px; border-bottom:1px solid #e5e5e5; padding-top:10px; padding-bottom:5px;}
+.sgHot ul{width: 224px; overflow:hidden;}
+.sgHot li{float: left; margin:0 0 8px 10px;}
+.sgHot li a{display: block; width: 60px; text-align:center;}
+.sgHot li span{display:block; height:21px; line-height: 21px; overflow:hidden;}
+.tree{float:left; width:247px; margin:0 auto;}
+.tree li{position: relative;}
+.tree .pictreeTit{padding:0 14px;}
+.tree .logo{margin-right:15px;}
+.tree .logo img{vertical-align:middle; }
+.tree .pictreeTit{height: 35px; line-height: 35px; font-weight: bold; background-color: #f5f5f5; font-size:18px;}
+.tree .ppLink{display: block;line-height: 24px; padding: 10px 14px; /* height: 50px; line-height: 50px; */ border-bottom: 1px solid #e9e9e9;}
+.tree .subTable{border-bottom:1px solid #e9e9e9; padding:18px 0; display: none;}
+.tree .subTable li{margin-bottom: 8px;}
+.tree .subTable .product{padding-right:25px;}
+.tree .subTable .product .des{display: block; overflow: hidden;}
+.tree .subTable{padding:20px 0 3px;}
+.tree .openChild .subTable{display: block;}
+.tree .sname{font-size: 14px;}
+.tree .snum,.tree .openChild .subTable .product span{color:#999;}
+.tree .banTit{font-weight: bold; padding-left:15px;}
+.tree .banTit .icon-line{ float:left; width: 15px; height: 9px; margin:3px 10px 0 0; background-position: -35px 0; font-size:0; overflow:hidden;}
+.tree .product {padding-left: 40px;}
+.tree .product .icon-line{float:left; width: 9px; height: 17px; margin:3px 10px 0 0; background-position: -35px 0; font-size:0; overflow:hidden;}
+.tree .emBox{position: absolute; left: 194px; top: 0; height: 50px; width: 26px; cursor: pointer;}
+.tree .emBox i{position: absolute; top:22px; right: 10px; width: 8px; height: 5px;background-position: 0 -24px; font-size: 0; overflow: hidden; cursor: pointer;}
+.tree .openChild .emBox i{background-position: -17px -31px;}
+.tree .cur .sname{color:#0777dd;}
+.tree .cur:hover .sname{color:#f60;}
+
+/*mainDiv*/
+.mainDiv{float: left; position: relative; left:30px;  width: 820px; background-color:#fff; z-index: 10;}
+
+/*position*/
+.position{height: 20px; line-height:20px; font-size: 14px;}
+
+/*select-banner*/
+.select-banner .select-clear .icon-ljt,.select-banner .select-box-close{ background-image: url(//www1.pcauto.com.cn/zt/gz20170412/price/index/icons_201707.png); background-repeat: no-repeat;}
+.select-banner .tit { float: left; font-size: 14px; padding-left: 20px; padding-right: 5px; line-height: 48px;  color:#999;}
+.select-banner .select-box { overflow: hidden; padding-bottom: 7px; }
+.select-banner .select-c { float: left; display: inline;   margin-top:12px; margin-right: 10px; }
+.select-banner .select-c a {height: 24px;     padding: 0 24px 0 10px;background: #fff; line-height: 24px; border: 1px solid #0777dd;  height: 100%; display: block; position: relative;}
+.select-banner .select-box-close { position: absolute; width: 10px; height: 10px; background-position: -27px -63px ; cursor: pointer; zoom: 1; line-height: 34px; right: 7px; top: 7px; }
+.select-banner .select-c a:hover { text-decoration: none; border-color:#f60; color:#333;}
+.select-banner .select-c a:hover .select-box-close{background-position: -19px -107px;}
+.select-banner .select-clear { margin: 13px 0 0 10px; float: left; font-size: 14px; color: #333; }
+.select-banner .select-clear .icon-ljt {width: 16px; height: 16px; float: left; margin-top: 4px; margin-right: 4px; background-position: 0 -106px ;}
+.select-banner .select-clear a:hover { text-decoration: none; }
+.select-banner .select-clear a:hover .icon-ljt{background-position:0 -122px; }
+.select-banner-wrap {position: relative; min-height:50px; margin:20px 0 20px 0;}
+.select-banner-wrap .select-banner{border: 1px solid #e5e5e5; border-left: 0; border-right: 0; background: #f5f5f5; width: 820px; /* height: 48px; */ font-size:14px;}
+
+.select-fixed .select-banner-inner{position: fixed; top:0; position: fixed; width: 100%; z-index: 9999; min-width: 1120px; left: 0;}
+.select-fixed .select-banner{position: absolute; left: 300px; box-shadow: 0 2px 3px #ddd;}
+.select-fixed .banner{position: relative; width: 1120px; margin: 0 auto; left: 0;}
+.nav-fixedA .select-fixed .select-banner-inner{top:55px;}
+.select-fixed.select-banner-wrap{z-index:599;}
+
+/*brand-tit*/
+.brand-tit {height: 57px;width: 820px;border-bottom: 2px solid #e5e5e5;}
+.brand-tit .brand-logo { float: left; }
+.brand-tit .brand-logo img { margin-top: 10px; margin-right: 10px; float: left; }
+.brand-tit .brand-logo p{float:left; margin-top:7px; font-size:26px; font-weight:bold;color:#333;}
+.brand-tit .brand-logo em { float: left; color: #999; margin: 24px 0 0 15px;  font-size:14px;}
+.brand-tit .brand-nav { float: right; margin-top: 23px; }
+.brand-tit .brand-nav span { float: left; margin-left: 10px; }
+.brand-tit .brand-nav span a { color: #999; font-size: 14px; zoom: 1; }
+.brand-tit .brand-nav span a:hover { color: #f70; }
+.brand-tit .brand-nav .blank { color: #999; float: left; padding: 0px 10px; }
+.brand-tit .brand-navB { float: right; }
+.brand-tit .brand-navB .brand-linkB { margin-left: 30px; border-bottom: 2px solid transparent; line-height: 44px; height: 44px; float: left; margin-top: 13px; }
+.brand-tit .brand-navB .brand-linkB a { color: #999; font-size: 18px; }
+.brand-tit .brand-navB .brand-linkB a:hover { color: #f70; }
+.brand-tit .brand-navB .brand-linkB.current { border-color: #0777dd; }
+.brand-tit .brand-navB .brand-linkB.current a { color: #0777dd; }
+
+/*footer*/
+body .g-footer .gft-wrap{width: 820px;}
+body.b-webWideScreen .g-footer{background-color: #fff;}
+body.b-webWideScreen .g-footer, body.b-webWideScreen .g-footer a, body.b-webWideScreen .g-footer .gft-copyRight, body.b-webWideScreen .g-footer .gft-copyRight a{color: #999;}
+body.b-webWideScreen .g-footer .gft-links{ word-spacing: -2px;}
+body.b-webWideScreen .g-footer .gft-links a{color:#666; margin: 0;}
+body.b-webWideScreen .g-footer .gft-links a:hover{color:#f60;}
+body.b-webWideScreen .g-footer{border-top-color:#e5e5e5;}
+
+/*城市*/
+.city{position: relative; cursor: pointer;}
+.city .icon-arrD {margin-left: 3px; background-position: -22px -457px; transition: .25s; }
+.city .cityName{color:#333; font-weight:600;}
+.active .icon-arrD {transform: rotate(180deg); }
+
+/*对比按钮*/
+.comparepop{top:99px;}
+
+/*酷养车推广*/
+.qcbj-fixed{width:155px; height:180px;position: fixed;left: 50%; top: 111px;margin-left: -742px; background: #fff; border: 1px solid #eee;    line-height: 20px; text-align: center; padding: 6px;display: none;}
+.qcbj-fixed .qcbj-close{position: absolute;top: -16px;width: 16px;right: 0;height: 16px;background: url(//www1.pcauto.com.cn/20140911/bjkclient/images/closeBtn.png) no-repeat;cursor: pointer;}
+
+/*广告间距*/
+.ivy820 iframe, .ivy820 object, .ivy820 img{margin-bottom: 5px;}
+
+/* 金九银十 */
+.pop_ivy_jjys{width: 130px; height: 130px; position: fixed; left: 50%; top: 100px; margin-left: -694px;}
+.pop_ivy_jjys .close{position: absolute; width: 20px; height: 20px; top:0; right: 0; cursor: pointer;}
+
+                                                                                                               
+@charset "gb2312";
+/*floatBtns.css*/
+.hide{display:none;}
+.floatBtns .icon{display:inline-block; background-image:url(//www1.pcauto.com.cn/zt/gz20170412/price/cxsy/icon.png); background-repeat:no-repeat; vertical-align:middle;}
+.floatBtns{width: 50px; position: fixed; left: 50%; bottom: 25px; margin-left: 590px; _position: absolute; _top: expression(documentElement.scrollTop+documentElement.clientHeight - this.clientHeight - 20 +"px"); z-index:501;}
+.floatBtns .btn-find,.floatBtns .btn-history,.floatBtns .btn-fback,.floatBtns .btn-goTop{display:block;width:50px; height:50px; margin-bottom:2px;background:url(//www1.pcauto.com.cn/zt/gz20170412/price/icon-big.png) no-repeat; cursor:pointer;}
+.floatBtns .btn-find{background-position: 0 -616px;}
+.floatBtns .btn-history{background-position:0 -152px;}
+.floatBtns .btn-fback{background-position:0 -207px;}
+.floatBtns .btn-goTop{background-position:0 -261px;}
+.floatBtns .btn-find:hover{background-position: -60px -616px;}
+.floatBtns .btn-history:hover{background-position: -60px -152px;}
+.floatBtns .btn-fback:hover{background-position: -61px -207px;}
+.floatBtns .btn-goTop:hover{background-position: -61px -261px;}
+
+/*pop-history*/
+.pop-history{ position: fixed; width:298px; left: 50%; margin-left: 270px; bottom:132px; background-color:#fff; border:1px solid #e5e5e5; box-shadow: 0px 0px 5px #ccc; border:1px solid #e5e5e5;   font-size:14px;}
+.pop-history .btn-clear .icon-clear{vertical-align: -1px; *vertical-align:5px; margin-right: 2px;}
+.pop-history .icon-close{ background-position: -28px -765px; width: 16px; height: 16px; float:right; margin-top:16px; cursor:pointer;}
+.pop-history .th,.pop-history li{height:48px; line-height:48px; padding:0 12px; overflow:hidden; border-bottom:1px solid #e5e5e5;}
+.pop-history li a{float:left; width:250px;}
+.pop-history .th .mark{color:#0777dd; font-size:18px;}
+.pop-history .subMark{float:right;}
+.pop-history .subMark a{color:#999; cursor:pointer;}
+.otherBtns #Jhistory,#btn-goTop{display:none;}
+                                                    
+.rd-ts{width:184px;height:54px;display:none;position:absolute;background:#fff;padding:6px 10px;line-height:18px;    border: 1px solid #e5e5e5; box-shadow: 0px 0px 5px #ccc;z-index: 599;}
+
+/*排行榜左树*/
+.pb200 .icon-line,.leftNavB .icon-top{background-image: url(//www1.pcauto.com.cn/zt/gz20170412/price/index/icons_201707.png); background-repeat: no-repeat;}
+.pb200 ul .icon-line{float:left; width: 9px; height: 17px; margin:3px 10px 0 0; background-position: -35px 0; font-size:0; overflow:hidden;}
+.leftNavB .leftTree{width:270px; left:0; border-left:1px solid #e5e5e5;}
+.leftNavB .icon-top{float:left; width:17px; height:16px;     background-position: -18px -122px; margin: 16px 10px 0 0; }
+.pb200{width: 270px; padding-bottom: 606px;}
+.pb200 a{display:block; padding:0 14px; }
+.pb200 .ctrl{border-bottom: 1px solid #e9e9e9;}
+.pb200 .tit{height: 46px; line-height: 46px; background-color: #0777dd; color:#fff; font-size:16px;}
+.pb200 .ctrl{height: 35px; line-height: 35px; background-color: #f5f5f5; font-weight: bold; font-size: 14px;}
+.pb200 .ctrl .emBox{height: 35px; left:224px;}
+.pb200 .ctrl .emBox i{top: 14px;}
+
+.pb200 .on .emBox i{background-position: -17px -31px}
+.pb200 .fw{background-color:#fff; font-weight: normal;}
+.pb200 .ml20 ul{padding:10px 0 6px; border-bottom:1px solid #e9e9e9;}
+.pb200 .ml20 ul a{font-size: 14px; margin-bottom: 8px;}
+.pb200 .ml20 .dd.cur{color:#0777dd;}
+.pb200 .ml20 .dd.cur:hover{color:#f60;}
+.ml20 .ctrl{height: 40px; line-height: 40px;}
+.ml20 .ctrl .emBox{height: 40px;}
+.ml20 .ctrl .emBox i{top: 18px;}
+
+/*modRank*/
+.modRank .thA .sub{margin-top:18px;}
+.modRank .tbA{padding-top:0;}
+.modRank .index{min-width:24px; font-style: italic; font-family: Arial; font-size:16px;}
+.modRank .org{color:#ff4444;}
+.modRank .rd{width: 90px; height:4px;padding:13px 0; position: relative; font-size:0; overflow:hidden;}
+.modRank .rd .total, .modRank .rd .cur{position: absolute; border-radius:2px;}
+.modRank .rd  .total{width:90px; height: 4px; background-color:#e9e9e9;}
+.modRank .rd .cur{height:4px; background-color:#ccc;}
+.modRank .rd-mark{font-size: 12px; color:#999;}
+.modRank .on .rd-mark{color:#ff4444;}
+.modRank .on .rd .cur{background-color:#ff4444;}
+.modRank .star{top:7px; margin-right:34px;}
+.modRank .star .starmk{font-weight:normal; font-size: 14px; line-height: 27px; right:-32px;}
+.modRank .gray-link{margin-right:2px; color:#999;}
+.modRank .gray-link:hover{color:#f60;}
+
+/*无数据样式*/
+.noContentTips{text-align: center; color: #999; font-size: 14px; margin: 60px 0;}
+/*页码*/
+.pcauto_page{height:auto;clear:both;text-align:center;color:#999; margin:25px 0 24px;}
+.pcauto_page span,.pcauto_page a{display:inline-block;padding:0 16px;height:38px;line-height:38px;font-size:14px;margin:0 2px 10px;}
+.pcauto_page span{background:#0777dd;color:#fff;border:1px #0777dd solid;}
+.pcauto_page a{border:1px solid #ddd;color:#333;background:#fff; text-decoration:none;}
+.pcauto_page a:hover{color:#0777dd;border:1px solid #0777dd;}
+
+
+
+/*排行榜*/
+.modRank{padding-bottom: 24px;}
+.modRank .tbA{overflow:hidden; font-size: 14px;}
+.modRank .box{width: 844px;}
+.modRank .box-a{float: left; width: 378px; min-height: 480px; margin:24px 0 16px -1px; border-left: 1px solid #eee;}
+.modRank .border-a{padding-right: 30px;}
+.modRank .border-b{padding-left: 30px;}
+.box-a-hd{height:38px; line-height: 38px; margin-bottom:12px;}
+.box-a-hd .topTit{float: left; font-size: 22px;}
+.box-a-hd .city{float: left; height: 20px; line-height: 20px; margin-top: 10px;}
+.box-a-hd .submore{float: right; color:#999;}
+.box-a-hd .submore:hover{color:#f60;}
+.box-a-bd li{height: 34px; overflow: hidden; vertical-align:bottom}
+.box-a-bd li.on{height: auto; overflow: inherit;}
+.box-a-bd .tit{height:34px; line-height: 34px; overflow:hidden;}
+.modRank .on .tit .num{color:#ff4444; font-size: 12px;}
+.box-a-bd .tit .index{width:18px; padding-right:10px; font-style: italic; font-family: Arial; text-align:center;}
+.box-a-bd .tit .org{color:#ff4444;}
+.box-a-bd .tit .pw-a,.box-a-bd .tit .pw-b{font-size: 12px; }
+.box-a-bd .tit .pw-b{width: 52px;}
+.box-a-bd .tit .pw-a{width: 70px; text-align:right; color:#999; margin-left:78px;}
+.box-a-bd .tt{width: 150px; height:30px; overflow:hidden;}
+.box-a-bd .info{display:none; overflow:hidden;}
+.box-a-bd .info .pic{float: left; margin: 0 18px 0 24px;}
+.box-a-bd .info .txt{padding:10px 0;  line-height: 34px; overflow:hidden;}
+.box-a-bd .info .txtA{padding:0; font-size:12px; line-height: 29px;}
+.box-a-bd .oil{font-size:12px; color:#999;}
+.box-a-bd .on .info{display:block;}
+.box-a-bd .on .pw-a,.box-a-bd .on .oil{color:#ff4444;}
+.sub-suv .layCityBox{left:-500px;}
+.box-a-hd .cityName{ font-size:14px; margin-left:12px;}
+.box-a-hd .city{float:left;}
