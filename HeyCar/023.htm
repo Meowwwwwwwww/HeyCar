@@ -1,0 +1,329 @@
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Hey Car Ranking</title>
+<!--格式的书写--->
+<style type="text/css">
+	.clear{
+		clear:both;
+	}
+
+	#top_left{
+		width:738px;
+		
+		float: left;
+	}
+	
+	#top_left img{ 
+	 margin-top: 11.6px;
+	 margin-left: 88px; 
+	 width :251px;
+	 height :67.83px;
+	 margin-bottom: -5px;
+	}
+	#top_right{
+	 font-size: 15.8px;
+    padding-right: 3px;
+    padding-top: 25px;
+    padding-bottom: 30px;
+	margin-left:40px;
+	float:rigth;
+	
+	}
+
+	#top_right a{
+		margin: 0 16px;
+		text-decoration: none;
+		color: #818181;
+		border-width: 0px;
+		border-style: solid;
+		border-radius: 0px;
+		
+		<!-- background-color: red; -->
+
+	}
+	#top_right a:hover{
+		color:#20B2AA;
+	}
+	#menu{
+		background-color: #F3F3C8;
+		text-align:right; 
+		padding: 8px 0px;
+	}
+	
+	#menu a{
+		margin: 0 30px;
+		color: 	#A0522D;
+		text-decoration: none;
+		<!-- font-weight: bold; -->
+		font-size: 16px;
+	}
+	#menu a:hover{
+		color: #9400D3;
+	}
+	#mainchoose{
+		background-color: #0C9A8C;
+		<!-- border-top:5px solid #82B211; -->
+		
+		text-align:center; padding: 10px 0px;
+	}
+	#mainchoose a{
+		margin: 30px 30px;
+		margin-top：20px;
+		color: #F0FFF0;
+		text-decoration: none;
+		 <!-- font-weight: bold;  -->
+		font-size: 23px;
+	}
+	#mainchoose a:hover{
+		color: #9400D3;
+	}
+	#mainchoose .all{
+		color: yellow
+	}
+	#search{
+		background-color: #F3F3C8	;
+		padding:7px 0;
+		text-align: right;
+		
+	}
+	#search input[type='image']{
+		/* margin-top: 5px; */
+		width :30px;
+		height:30px;
+		margin-right: 100px;
+		margin-bottom: -8px;
+	}
+	#search input[type='text']{
+		height: 35px;
+		width:180px;
+		border:1px solid #999;
+	}
+	
+	/*-------------------------------------------------------*/
+	
+	#content{
+		width:100%;
+		margin:0px auto 15px;/*auto div居中*/
+		background-color:#F3F3D4;
+		text-align:center;
+	}
+	#left_content{
+	
+	width:20%;
+	font-size:16px; 
+	<!-- background-color:background-color: #F3F3C8; -->
+	text-align:left;
+	padding-left:1px;
+	background-color:#0C9A8C;
+	}
+	
+	#left_content .first{
+	margin-top:10px;
+	font-size:23px;	
+	background-color:#87CEEB;
+	padding:10px;
+	}
+	#left_content .first a{
+	text-decoration: none;
+	color:#A06977;
+	}
+	#left_content .first a:hover{
+		color: #9400D3;
+	}
+	#left_content .second{
+	font-size:20px;	
+	}
+	#left_content .second a{
+	text-decoration: none;
+	color:yellow;
+	}
+	#left_content .second a:hover{
+		color: #9400D3;
+	}
+	#left_content .third{
+	font-size:18px;	
+	}
+	#left_content .third a{
+	text-decoration: none;
+	color:#F3F3D4;
+	}
+	#left_content .third a:hover{
+		color: #9400D3;
+	}
+	
+	
+	
+	
+	
+	#content_top{
+		text-align: right;
+		font-size:13px;
+	}
+	#content_bottom{
+		border:1px solid #999;
+		background-color: #FCFDEF;
+		padding:10px 15px;
+	}
+	#content_bottom h1{
+		font-size: 15px;
+		display: inline;
+	}
+	#content_bottom span{
+		font-size: 13px;
+	}
+	#productlist_img img{
+		width: 100%;
+	}
+	.book{
+		float: left;
+		width: 25%;
+		text-align: center;
+		padding:10px 0px;
+	}
+	.bookimg img{
+		width: 130px;
+		height: 196px;
+	}
+	#jumpPage{
+		text-align: center;
+		margin: 10px;
+	}
+	#jumpPage a{
+		padding:2px 6px;
+		border: 1px solid #9AAFE5;
+		text-decoration: none;
+		color:#9AAFE5;
+	}
+	#jumpPage a:hover{
+		color:#2B66A5;
+		border: 1px solid #2B66A5;
+	}
+	.current{
+		background-color: blue;
+	}
+	
+	/*-------------------------------------------------------*/
+	
+	#bottom{
+		background-color: #EFEEDC;
+		height:60px;
+		padding:10px 0px;
+	}
+	
+	#bottom_left{
+		width: 400px;
+		float: left;
+		margin-left: 200px;
+	}
+	#bottom_right{
+		width: 500px;
+		float: left;
+		line-height:28px;/*行高*/
+	}
+	
+
+	</style>
+	
+	
+	</script>
+
+</head>
+
+<body>
+	<div id="page">
+	
+	<div id ="top">
+		<div id="top_left">
+				<img alt="" src="images/carlogo.png">
+		</div>		
+		<div id="top_right">
+				<a href="file:///C:/Users/Administrator/Desktop/car/01.htm">首页</a>&nbsp;
+				<a href="file:///C:/Users/Administrator/Desktop/car/023.htm">汽车天地</a>&nbsp;
+				<a href="file:///C:/Users/Administrator/Desktop/car/031.htm">汽车精选</a>&nbsp;
+				<a href="file:///C:/Users/Administrator/Desktop/car/04.htm">汽车问答</a>&nbsp;
+				<a href="file:///C:/Users/Administrator/Desktop/car/5.htm">关于|联系</a>
+		</div>
+		
+		<div class="clear"></div>
+	
+		<div id="menu">
+			<a href="#">注册</a>&nbsp;|&nbsp;
+			<a href="#">登录</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		</div>
+	
+		<div id ="search">
+				<span>Search</span>
+				<input type="text" />
+				<input type="image" src="images/searchbutton2.jpg" />
+		</div>
+	</div>
+	
+	<div id ="content">
+		<div id="mainchoose">
+			<a href="#">报价</a>
+			<a href="#">图片</a>
+			<a href="#">视频</a>
+			<a href="#">经销商</a>
+			<a class="all" href="#">汽车排行榜</a>
+		</div>
+		<div id="left_content">
+			<div class="first"><a href="#">*排行榜首页*</a></div>
+			<div class="second"><a href="#">车主喜爱度排行榜</a></div>
+			<div class="third"><a href="#">按国别</a></div>
+			<div class="third"><a href="#">按产地</a></div>
+			<div class="third"><a href="#">按价格</a></div>
+			<div class="third"><a href="#">按性能</a></div>
+			<div class="third"><a href="#">按百度指数</a></div>
+			<div class="second"><a href="#">销量排行榜</a></div>
+			<div class="third"><a href="#">按分类</a></div>
+			<div class="third"><a href="#">按级别</a></div>
+			<div class="second"><a href="#">油耗排行榜</a></div>
+			<div class="third"><a href="#">按级别</a></div>
+			<div class="third"><a href="#">按价格</a></div>
+			<div class="third"><a href="#">按排量</a></div>
+			<div class="second"><a href="#">降价排行榜</a></div>
+			<div class="third"><a href="#">按价格</a></div>
+			<div class="third"><a href="#">按销量</a></div>
+			
+			
+			
+		</div>
+		
+		
+		<div id="right_content">
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		</div>
+	</div>
+	
+	</div>
+	
+
+	</div>
+    </body>
+
+
+
+
+	<!-- <script type="text/javascript"> -->
+	<!-- var div = document.getElementByClass("pages"); -->
+	<!-- div.onmouseover = function(){ -->
+		<!-- this.style.backgroundColor = "green"; -->
+	<!-- }; -->
+	<!-- div.onmouseout = function(){ -->
+		<!-- this.style.backgroundColor = "red"; -->
+	<!-- }; -->
+	<!-- </script> -->
+
+
+</html>

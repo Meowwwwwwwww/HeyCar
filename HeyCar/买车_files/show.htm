@@ -1,0 +1,43 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=GBK"><script>
+
+
+(function(SRC,URL){
+    var w = 1*SRC.replace(/^.*#(\d+)x(\d+).*$|^.*$/,'$1'); if(w<1)w=990;
+    var h = 1*SRC.replace(/^.*#(\d+)x(\d+).*$|^.*$/,'$2'); if(h<1)h=90;
+    var trans = /#transparent/i.test(SRC)?'transparent':/#window/i.test(SRC)?'window':'opaque';
+    var close = /#close/i.test(SRC),close2 = /#close2/i.test(SRC);
+    var trace = location.href.replace(/^.*&trace=(\d+).*$|^.*$/,'$1'); 
+    var atid = location.href.replace(/^.*&atid=(\d+).*$|^.*$/,'$1'); 
+    var src2 = '#820x60', src3 = '//g.cn.miaozhen.com/x/k=2076510&p=7E07L&dx=__IPDX__&rt=2&ns=__IP__&ni=__IESID__&v=__LOC__&xa=__ADPLATFORM__&tr=__REQUESTID__&mo=__OS__&m0=__OPENUDID__&m0a=__DUID__&m1=__ANDROIDID1__&m1a=__ANDROIDID__&m2=__IMEI__&m4=__AAID__&m5=__IDFA__&m6=__MAC1__&m6a=__MAC__&o=',src4='{SRC4}',adTipStyle="right:0px;",adTipImg="//www1.pconline.com.cn/zt/20160901/ad1p.png";
+
+    var js_check = /^.*#js=([^#]+).*$/.test(src2),
+        img_check = /^.*#img=([^#]+).*$/.test(src2),
+        js,img;
+
+    if(js_check || img_check){
+        js = src2.replace(/^.*#js=([^#]+).*$|^.*$/,'$1');
+        img = src2.replace(/^.*#img=([^#]+).*$|^.*$/,'$1');
+    }else{
+        js = src3.replace(/^.*#js=([^#]+).*$|^.*$/,'$1');
+        img = src3.replace(/^.*#img=([^#]+).*$|^.*$/,'$1');
+    }
+    if(/^http.*$/i.test(src2)||/^\/\/.*$/i.test(src2)) img = src2;
+    if(/^http.*$/i.test(src3)||/^\/\/.*$/i.test(src3)) img = src3;
+    if(src4=="none"){
+        adTipStyle+="display:none;"
+    }else if(src4=="left"){
+        adTipStyle="left:0px;";
+        adTipImg="//www1.pconline.com.cn/zt/20160901/ad1p.png";
+    }
+
+    SRC = SRC.replace(/#.*$/,'');
+    var traceparam = location.hash ? location.hash.replace(/.*#(trace=\d+).*/i,"&$1") : '';
+    document.write('<body style="padding:0;margin:0;">');
+    document.write('<OBJECT classid=clsid:D27CDB6E-AE6D-11cf-96B8-444553540000 WIDTH='+w+' HEIGHT='+h+'><PARAM name=flashvars value=id=ad476090><PARAM NAME=movie VALUE='+SRC+' ><EMBED name=ad476090 src='+SRC+' WIDTH='+w+' HEIGHT='+h+' flashvars=id=ad476090 TYPE=application/x-shockwave-flash PLUGINSPAGE=//www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash wmode='+trans+'></EMBED><param name=wmode value='+trans+'></OBJECT>');
+    document.write('<a id="ad476090" class="auto.baojia.bj.tl1-1." href="'+ URL + traceparam +'" target="_blank" style="position:absolute;top:0;left:0;border:none;"><img src="//img0.pconline.com.cn/ivy/image/blank.gif" width="'+w+'" height="'+h+'" border="0" /></a><div class="jsAdAdTipWrap" style="width:20px;position:absolute;bottom:0;font-size:0;line-height:0;overflow:hidden;'+adTipStyle+'"><i class="jsAdAdTip" style="*top:1px;top:1px\9;position:relative;z-index:1;display:block;*zoom:1;width:20px;height:12px;background: url('+adTipImg+');_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='+adTipImg+')"></i><img src="//www.pcauto.com.cn/blank.gif" width="20px" height="0" /></div>');
+    if(js) document.write('<script src="'+js+'"><\/script>');
+    if(img) (window[Math.random()] = new Image()).src = img.replace('[timestamp]',new Date()*1);
+})('//imgad0.pcauto.com.cn/ivy/image/20184/3/15227185061440.swf##820x60','http://ivy.pcauto.com.cn/click?adid=476090&id=auto.baojia.bj.tl1-1.');
+</script></head><body style="padding:0;margin:0;"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="820" height="60"><param name="flashvars" value="id=ad476090"><param name="movie" value="//imgad0.pcauto.com.cn/ivy/image/20184/3/15227185061440.swf"><embed name="ad476090" src="show_data/15227185061440.swf" flashvars="id=ad476090" type="application/x-shockwave-flash" pluginspage="//www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" wmode="opaque" width="820" height="60"><param name="wmode" value="opaque"></object><a id="ad476090" class="auto.baojia.bj.tl1-1." href="http://ivy.pcauto.com.cn/click?adid=476090&amp;id=auto.baojia.bj.tl1-1." target="_blank" style="position:absolute;top:0;left:0;border:none;"><img src="show_data/blank.gif" width="820" border="0" height="60"></a><div class="jsAdAdTipWrap" style="width:20px;position:absolute;bottom:0;font-size:0;line-height:0;overflow:hidden;right:0px;"><i class="jsAdAdTip" style="*top:1px;top:1px9;position:relative;z-index:1;display:block;*zoom:1;width:20px;height:12px;background: url(//www1.pconline.com.cn/zt/20160901/ad1p.png);_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=//www1.pconline.com.cn/zt/20160901/ad1p.png)"></i><img src="blank.gif" width="20px" height="0"></div>
+</body></html>
