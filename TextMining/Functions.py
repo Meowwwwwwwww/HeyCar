@@ -22,6 +22,7 @@ def split(car_comments_list):
 
 # 输入评论集，返回通过TF-IDF算法去除停用词并分词后的列表
 def wipeoff(car_comments_list):
+    ana.set_stop_words("C:\\Users\\adminsistrator\\Desktop\\汽车销售数据文件\\停用词.txt")
     jieba_wipeoff_list = []
     for comment_list in car_comments_list:
         jieba_one_list = []
